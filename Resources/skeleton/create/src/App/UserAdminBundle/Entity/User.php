@@ -1,6 +1,6 @@
 <?php
 
-namespace Parabol\UserBundle\Entity;
+namespace App\UserAdminBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;

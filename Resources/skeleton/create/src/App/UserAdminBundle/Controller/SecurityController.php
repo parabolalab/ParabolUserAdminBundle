@@ -1,6 +1,6 @@
 <?php
 
-namespace Parabol\UserBundle\Controller;
+namespace App\UserAdminBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;

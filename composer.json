@@ -1,0 +1,11 @@
+{
+    "name": "parabol/parabol-user-bundle",
+    "version": "master",
+    "type": "symfony-bundle",
+    "require" : {
+
+    },
+    "autoload": {
+        "psr-4": { "Parabol\\UserAdminBundle": "" }
+    }
+}

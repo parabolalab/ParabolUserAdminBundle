@@ -1,6 +1,6 @@
 <?php
 
-namespace Parabol\UserBundle;
+namespace App\UserAdminBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

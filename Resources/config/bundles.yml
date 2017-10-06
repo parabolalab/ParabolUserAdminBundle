@@ -1,0 +1,2 @@
+kernel:
+  - FOS\UserBundle\FOSUserBundle

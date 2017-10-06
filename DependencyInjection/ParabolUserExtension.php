@@ -1,6 +1,6 @@
 <?php
 
-namespace Parabol\UserBundle\DependencyInjection;
+namespace Parabol\UserAdminBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

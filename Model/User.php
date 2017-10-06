@@ -1,6 +1,6 @@
 <?php
 
-namespace Parabol\UserBundle\Model;
+namespace Parabol\UserAdminBundle\Model;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
@@ -8,8 +8,6 @@ use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Symfony\Component\Validator\Constraints as Assert;
-
-use Parabol\AdminCoreBundle\Validator\Constraints as ParabolAssert;
 
 /**
  * @ORM\MappedSuperclass

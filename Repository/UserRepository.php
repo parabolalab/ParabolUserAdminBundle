@@ -1,6 +1,6 @@
 <?php
 
-namespace Parabol\UserBundle\Repository;
+namespace Parabol\UserAdminBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 

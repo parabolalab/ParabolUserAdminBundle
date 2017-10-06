@@ -1,6 +1,6 @@
 <?php
 
-namespace Parabol\UserBundle\Tests\Controller;
+namespace Parabol\UserAdminBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

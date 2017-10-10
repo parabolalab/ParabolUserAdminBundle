@@ -1,0 +1,4 @@
+parabol_user_admin_user:
+    resource: "@AppUserAdminBundle/Controller/User/"
+    type:     admingenerator
+    prefix:   /users

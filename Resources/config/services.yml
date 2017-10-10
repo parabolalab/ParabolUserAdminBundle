@@ -1,1 +1,13 @@
 services:
+    parabol.admin_menu.users:
+        class: Parabol\AdminCoreBundle\Menu\MenuItem
+        arguments: 
+          - "Users"
+          - "App_UserAdminBundle_User_list"
+          - null
+          - "fa fa-users"
+          - "top"
+          - null
+          - "ROLE_ADMIN"
+        tags:
+            -  { name: parabol.admin_menu }

@@ -2,3 +2,9 @@ fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
     prefix:   /admin
     options: { i18n: false }
+
+parabol_admin_user:
+    resource: '@ParabolUserAdminBundle/Resources/config/routing.yml'
+    prefix: /admin
+    options:
+        i18n: false

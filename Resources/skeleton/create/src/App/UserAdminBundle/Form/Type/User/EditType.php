@@ -9,6 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class EditType extends BaseEditType
 {
+  use \Parabol\BaseBundle\Form\Type\Base\BaseType;
 
 	public function getOptionsPlainPassword(array $builderOptions = array())
 	{

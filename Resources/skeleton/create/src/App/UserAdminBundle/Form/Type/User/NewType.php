@@ -10,7 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class NewType extends BaseNewType
 {
-	use \Parabol\BaseBundle\Form\Type\Base\BaseType;
+	use \Parabol\AdminCoreBundle\Form\Type\Base\BaseType;
 
 	public function getOptionsPlainPassword(array $builderOptions = array())
 	{

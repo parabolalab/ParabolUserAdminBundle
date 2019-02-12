@@ -12,12 +12,14 @@ security:
 
     firewalls:
         admin:
-            pattern: ^/
+            pattern: ^/admin
             form_login:
                 provider: fos_userbundle
                 csrf_token_generator: security.csrf.token_manager
                 check_path: /admin/login_check
                 login_path: /admin/login
+                always_use_default_target_path: false
+                default_target_path:  /admin
                 # if you are using Symfony < 2.8, use the following config instead:
                 # csrf_provider: form.csrf_provider
 

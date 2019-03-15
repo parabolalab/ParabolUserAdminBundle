@@ -9,7 +9,7 @@ use Admingenerated\AppUserAdminBundle\BaseUserController\EditController as BaseE
  */
 class EditController extends BaseEditController
 {
-	public function postSave(\Symfony\Component\Form\Form $form, \Parabol\UserBundle\Entity\User $User)
+	public function postSave(\Symfony\Component\Form\Form $form, \App\UserAdminBundle\Entity\User $User)
     {
     	$request = $this->get('request_stack')->getCurrentRequest();
     

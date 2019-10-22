@@ -41,12 +41,31 @@ class UserData implements FixtureInterface, ContainerAwareInterface
         {
             foreach($users as $user)
             {
-                $this->createUser($user['username'], $user['email'], $user['password'], 'ROLE_ADMIN'); 
+                if(!isset($user['password']) || $user['password'])
+                {
+                    $password = $this->generateRandomString(12);    
+                }
+                else {
+                    $password = $user['password'];       
+                }
+                
+                $output->writeln('Password for user <options=bold>' . $user['username'] . '</>: <fg=yellow;options=bold>' . $password. '</>');
+                
+                $this->createUser($user['username'], $user['email'], $password, $user['role']); 
             }
         }        
       
     }
 
+    private function generateRandomString($length = 10) {
+        $characters = '01234567890123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&()!@#$%^&()!@#$%^&()!@#$%^&()';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+    }
 
     public function createUser($name, $email, $pass, $role)
     {

@@ -5,7 +5,7 @@ use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-
+use Symfony\Component\Console\Output\ConsoleOutput;
 use Parabol\AdminCoreBundle\Entity\User;
 
 
@@ -33,7 +33,8 @@ class UserData implements FixtureInterface, ContainerAwareInterface
     public function load(ObjectManager $manager)
     {
 
-        $this->manager = $this->container->get('fos_user.user_manager');  
+        $this->manager = $this->container->get('fos_user.user_manager');
+        $output = new ConsoleOutput();
 
         $users = $this->container->getParameter('default_users');
         
